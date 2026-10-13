@@ -3,16 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
     <title>Taawon</title>
+    
+    <!--loads Tailwind-->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!--custom font configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'googlesans': ['"Google Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body class="bg-[#CFC5B5] min-h-screen">
 
-    <!-- La Barre de Navigation -->
-    <nav class="w-full bg-[#CFC5B5] shadow-md px-8 py-4 flex items-center justify-between">
+    <!-- La Barre de Navigation-->
+    <nav class="w-full bg-[#F5F5F5]/80 shadow-md px-8 py-4 flex justify-between items-center">
         
-        <!-- 1. Le Logo ou le Titre à gauche -->
-        <div class="text-xl font-bold text-gray-800">
+        <!--Logo-->
+        <div class="text-xl font-bold text-gray-800 font-googlesans">
             Taawon
         </div>
         <div class="flex space-x-6 text-gray-600 font-medium">
