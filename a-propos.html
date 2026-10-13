@@ -8,10 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
     <title>Taawon</title>
     
-    <!--loads Tailwind-->
+    <!-- loads Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!--custom font configuration -->
+    <!-- custom font configuration -->
     <script>
         tailwind.config = {
             theme: {
@@ -24,22 +24,43 @@
         }
     </script>
 </head>
-<body class="bg-[#CFC5B5] min-h-screen">
+<body class="bg-[#F7F3EB] min-h-screen">
 
-    <!-- La Barre de Navigation-->
-    <nav class="w-full bg-[#F5F5F5]/80 shadow-md px-8 py-4 flex justify-between items-center">
+    <!-- La Barre de Navigation -->
+    <nav class="w-full bg-[#FFFFFF] px-8 py-4 flex justify-between items-center border-b border-black">        
         
-        <!--Logo-->
-        <div class="text-xl font-bold text-gray-800 font-googlesans">
-            Taawon
-        </div>
-        <div class="flex space-x-6 text-gray-600 font-medium">
+        <!--Logo Container-->
+        <div class="flex items-center space-x-3">
+            <img src="assets/icons/Vector.png" alt="Taawon Logo" class="w-8 h-8 object-contain">  
+            <span class="text-xl font-bold text-gray-800 font-googlesans">Taawon</span>
+            <div class="h-6 w-px bg-gray-300"></div>
+
+            <div class="text-[10px] font-semibold tracking-wider text-gray-600 leading-tight">
+                LES SAVOIR-FAIRE<br>
+                NOUS RELIENT
+            </div>
+        </div> <!-- End of Logo Container -->
+
+  <!-- 2. Right Side: Navigation Links with clean dividers -->
+        <div class="flex items-center text-gray-600 font-medium space-x-6">
             <a href="index.html" class="hover:text-black transition">Accueil</a>
+            
+            <!-- Vertical line after Accueil -->
+            <div class="h-5 w-px bg-gray-300"></div>
+
             <a href="cooperative.html" class="hover:text-black transition">cooperative</a>
+            
+            <!-- Vertical line after cooperative -->
+            <div class="h-5 w-px bg-gray-300"></div>
+
             <a href="cooperatives.html" class="hover:text-black transition">cooperatives</a>
+            
+            <!-- Vertical line after cooperatives -->
+            <div class="h-5 w-px bg-gray-300"></div>
+
             <a href="a-propos.html" class="hover:text-black transition">a-propos</a>
         </div>
-
+        </div>
     </nav>
 
 </body>
