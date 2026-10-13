@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <title>Taawon</title>
+    
+    <!-- load Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- custom font configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'googlesans': ['"Google Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#F7F3EB] min-h-screen">
+    <!-- La Barre de Navigation-->
+    <nav class="relative w-full bg-[#F7F3EB] px-8 py-4 flex justify-between items-center border-b border-gray-300">        
+        
+        <!-- Logo Container -->
+        <div class="flex items-center space-x-3">
+            <img src="assets/icons/Vector.png" alt="Taawon Logo" class="w-8 h-8 object-contain">  
+            <span class="text-xl font-bold text-gray-800 font-googlesans">Taawon</span>
+            <div class="h-6 w-px bg-gray-300"></div>
+
+            <div class="text-[10px] font-semibold tracking-wider text-gray-600 leading-tight">
+                LES SAVOIR-FAIRE<br>
+                NOUS RELIENT
+            </div>
+        </div> 
+
+        <!--DESKTOP LINKS-->
+        <div class="hidden md:flex items-center text-gray-600 font-medium space-x-6">
+            <a href="index.html" class="hover:text-black transition">Accueil</a>
+            <div class="h-5 w-px bg-gray-300"></div>
+            <a href="cooperative.html" class="hover:text-black transition">cooperative</a>           
+            <div class="h-5 w-px bg-gray-300"></div>
+            <a href="cooperatives.html" class="hover:text-black transition">cooperatives</a>
+            <div class="h-5 w-px bg-gray-300"></div>
+            <a href="a-propos.html" class="hover:text-black transition">a-propos</a>
+        </div>
+
+        <!--MOBILE MENU-->
+        <!-- Hidden checkbox-->
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+        <!--Hamburger Icon-->
+        <label for="menu-toggle" class="md:hidden flex items-center cursor-pointer text-gray-800">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </label>
+
+        <!--MOBILE DROPDOWN MENU-->
+        <div class="hidden peer-checked:flex flex-col absolute top-full left-0 w-full bg-[#F7F3EB] border-b border-gray-300 px-8 py-6 space-y-4 md:hidden shadow-md">
+            <a href="index.html" class="text-gray-600 hover:text-black font-medium transition">Accueil</a>
+            <a href="cooperative.html" class="text-gray-600 hover:text-black font-medium transition">cooperative</a>
+            <a href="cooperatives.html" class="text-gray-600 hover:text-black font-medium transition">cooperatives</a>
+            <a href="a-propos.html" class="text-gray-600 hover:text-black font-medium transition">a-propos</a>
+        </div>
+
+    </nav>
+
+</body>
+</html>
