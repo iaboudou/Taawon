@@ -1,13 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taawon</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
 </head>
 
-<body>
+<body class="bg-[#F7F3EB] min-h-screen">
+
+    <!-- Nav bar -->
+    <nav class="relative w-full bg-[#F7F3EB] px-8 py-4 flex justify-between items-center border-b border-gray-300">
+
+        <div class="flex items-center space-x-3">
+            <img src="assets/icons/Vector.png" alt="Taawon Logo" class="w-8 h-8 object-contain">
+            <span class="text-xl font-bold text-gray-800 ">Taawon</span>
+            <div class="h-6 w-px bg-gray-300"></div>
+            <div class="text-[10px] font-bold tracking-wider text-gray-600 leading-tight">
+                LES SAVOIR-FAIRE<br>
+                NOUS RELIENT
+            </div>
+        </div>
+
+        <div class="hidden md:flex items-center text-gray-600 font-medium space-x-6">
+            <a href="index.html" class="hover:text-black transition">Accueil</a>
+            <div class="h-5 w-px bg-gray-300"></div>
+            <a href="cooperative.html" class="hover:text-black transition">cooperative</a>
+            <div class="h-5 w-px bg-gray-300"></div>
+            <a href="cooperatives.html" class="hover:text-black transition">Coopératives</a>
+            <div class="h-5 w-px bg-gray-300"></div>
+            <a href="a-propos.html" class="hover:text-black transition">À propos</a>
+        </div>
+
+        <label for="menu-toggle" class="md:hidden flex items-center cursor-pointer text-gray-800">
+            <img src="assets/icons/burger-menu-right-svgrepo-com.svg" alt="Menu" class="w-6 h-6 object-contain">
+        </label>
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+
+        <div
+            class="hidden peer-checked:flex flex-col absolute top-full left-0 w-full bg-[#F7F3EB] border-b border-gray-300 px-8 py-6 space-y-4 md:hidden shadow-md">
+            <a href="index.html" class="text-gray-600 hover:text-black font-medium transition">Accueil</a>
+            <a href="cooperative.html" class="text-gray-600 hover:text-black font-medium transition">Coopérative</a>
+            <a href="cooperatives.html" class="text-gray-600 hover:text-black font-medium transition">Coopératives</a>
+            <a href="a-propos.html" class="text-gray-600 hover:text-black font-medium transition">À propos</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="md:flex md:justify-center md:items-center">
+            <div class="index-marginlr">
+                <h1 class="flex justify-center text-[#292D25] font-bold  text-3xl p-10 md:pl-0 md:justify-start md:text-7xl"> Des mains, des liens, des
+                    possibles. </h1>
+                <h2 class="text-[#A34830] p-[var(--padding)] md:pl-0 text-center flex justify-center font-bold md:justify-start"> COOPÉRER ·
+                    TRANSMETTRE · FAIRE
+                    CONNAÎTRE </h2>
+                <h3 class="text-[#292D25] text-center md:text-left p-[var(--padding)] md:pl-0 md:justify-start"> À la rencontre des coopératives artisanales
+                    marocaines. Taawon
+                    rend visibles celles et ceux qui façonnent les matières et font vivre les savoir-faire. </h3>
+                <div class=" flex gap-5 flex-col justify-center items-center md:justify-start md:flex-row">
+                    <button class="bg-[#A34830] h-12 w-72 text-white rounded-lg">
+                        Découvrir les coopératives
+                    </button>
+                    <button class="border border-red-500 h-12 w-72 rounded-lg">
+                        Devenir partenaire
+                    </button>
+
+                </div>
+            </div>
+            <img src="/assets/images/1.jpg" class="p-[var(--padding)] rounded-lg dm:max-w-6 dm:max-h-6 md:pr-17" alt="">
+        </section>
+
+        <div class="grid grid-cols-2 p-[var(--padding)] bg-[#E9DFCF]">
+            <div class="pl-4">
+                <h1 class="font-[Reenie_Beanie] text-6xl">36</h1>
+                <h4 class="text-xs text-[#292D25]">coopératives</h4>
+            </div>
+
+            <div class="pl-4">
+                <h1 class="font-[Reenie_Beanie] text-6xl">640</h1>
+                <h4 class="text-xs text-[#292D25]">artisans & artisanes</h4>
+            </div>
+
+            <div class="pl-4">
+                <h1 class="font-[Reenie_Beanie] text-6xl">8</h1>
+                <h4 class="text-xs text-[#292D25]">régions représentées</h4>
+            </div>
+
+            <div class="pl-4">
+                <h1 class="font-[Reenie_Beanie] text-6xl">180</h1>
+                <h4 class="text-xs text-[#292D25]">produits présentés</h4>
+            </div>
+        </div>
+
+        <h4 class="text-xs text-[#292D25] p-[var(--padding)]">Repères illustratifs du réseau · données de démonstration,
+            non vérifiées.</h4>
+
+    </main>
 
 </body>
 
