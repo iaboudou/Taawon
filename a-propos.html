@@ -10,11 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
         rel="stylesheet">
     <title>Taawon</title>
-
-    <!-- load Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- custom font configuration -->
     <script>
         tailwind.config = {
             theme: {
@@ -26,12 +22,12 @@
             }
         }
     </script>
+
 </head>
 <body class="bg-[#F7F3EB] min-h-screen flex flex-col justify-between">
 
     <nav class="relative w-full bg-[#F7F3EB] px-8 py-4 flex justify-between items-center border-b border-gray-300">
 
-        <!-- Logo Container -->
         <div class="flex items-center space-x-3">
             <img src="assets/icons/Vector.png" alt="Taawon Logo" class="w-8 h-8 object-contain">
             <span class="text-xl font-bold text-gray-800 font-googlesans">Taawon</span>
@@ -58,13 +54,81 @@
     <img src="assets\icons\burger-menu-right-svgrepo-com.svg" alt="Menu" class="w-6 h-6 object-contain">
         </label>
 
-        <div class="hidden peer-checked:flex flex-col absolute top-full left-0 w-full bg-[#F7F3EB] border-b border-gray-300 px-8 py-6 space-y-4 md:hidden shadow-md divide-y divide-gray-300 py-4">
-            <a href="index.html" class="text-gray-600 hover:text-black font-medium transition">Accueil</a>
-            <a href="cooperative.html" class="text-gray-600 hover:text-black font-medium transition">Coopérative</a>
-            <a href="cooperatives.html" class="text-gray-600 hover:text-black font-medium transition">Coopératives</a>
-            <a href="a-propos.html" class="text-gray-600 hover:text-black font-medium transition">À propos</a>
-        </div>
+       <div class="hidden peer-checked:flex flex-col absolute top-full right-0 bg-[#F7F3EB] border-b border-gray-300 shadow-md rounded-b-lg md:hidden z-10 w-full">
+    <a href="index.html" class="px-8 py-4 text-gray-600 hover:text-black font-medium transition border-b border-gray-300 border-t border-gray-300">Accueil</a>
+    <a href="cooperative.html" class="px-6 py-4 text-gray-600 hover:text-black font-medium transition border-b border-gray-300">Coopérative</a>
+    <a href="cooperatives.html" class="px-6 py-4 text-gray-600 hover:text-black font-medium transition border-b border-gray-300">Coopératives</a>
+    <a href="a-propos.html" class="px-8 py-4 text-gray-600 hover:text-black font-medium transition">À propos</a>
+</div>
     </nav>
+
+  <section class="max-w-4xl  mx-auto px-6 py-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div class="space-y-2 md:col-span-2">
+    <span class="tracking-widest text-[#A34828] uppercase font-bold block text-xs">
+    Ouvrons le dialogue
+    </span>
+
+    <h1 class="text-4xl md:text-5xl font-serif font-normal leading-tight mb-6">
+    Votre savoir-faire mérite d'être vu.
+  </h1>
+
+  <p class="text-lg md:text-xl text-[#555555] leading-relaxed mb-4">
+    Vous représentez une coopérative artisanale marocaine ? Rejoignez un réseau qui met les collectifs, leurs gestes et leurs histoires au premier plan.
+  </p>
+
+  <p class="text-sm md:text-base text-[#666666]">
+    Vous êtes un professionnel ou un mécène ? Écrivez-nous à 
+    <a href="mailto:bonjour@taawon.example" class="text-[#A34828] underline hover:opacity-80">
+      bonjour@taawon.example
+    </a> 
+    pour imaginer un partenariat.
+  </p>
+   </div>
+<div class="flex items-center justify-center">
+   <div class=" md:col-span-1 w-full">
+            <img src="assets\images\Photographie documentaire.png"class="w-full h-auto rounded-lg object-cover shadow-sm">
+        <p class="mt-2  text-[#A34828] text-center uppercase font-semibold tracking-wider text-xs mb-2">
+        Un premier pas, simplement.
+    </p>
+    <h1 class="text-4xl md:text-3xl font-serif font-normal leading-tight mb-6 text-center text-[#292D25]">
+    La suite se
+    construit
+    ensemble.
+  </h1>
+  <hr class="border-t border-gray-300 my-6">
+    <p class="text-xs md:text-base font-semibold text-[#292D25] leading-relaxed mb-4">
+    1. vous vous presentez
+    </p>
+    
+  <p class="text-sm md:text-base text-[#666666]">
+   partagez les premiers informations sur votre coopérative, vos savoir-faire et vos besoins.
+  </p>
+   <hr class="border-t border-gray-300 my-4">
+    <p class="text-xs md:text-base font-semibold text-[#292D25] leading-relaxed mb-2">
+    2. nous echangeons
+    </p>
+    
+  <p class="text-sm md:text-base text-[#666666]">
+   partagez les premiers informations sur votre coopérative, vos savoir-faire et vos besoins.
+  </p>
+   <hr class="border-t border-gray-300 my-4">
+    <p class="text-xs md:text-base font-semibold text-[#292D25] leading-relaxed mb-2">
+    3. vous validez votre portrait
+    </p>
+    
+  <p class="text-sm md:text-base text-[#666666] pb-10">
+   partagez les premiers informations sur votre coopérative, vos savoir-faire et vos besoins.
+  </p>
+  <p class="md:text-base text-[#666666] text-xs font-light">
+  besoin d'aide pour remplir le formulaire ? Écrivez-nous à 
+    <a href="mailto:taawon@gmail.com" class="text-[#A34828] underline hover:opacity-70">
+      taawon@gmail.com
+    </a>
+  </p>
+    </div>
+
+</div>
+</section>
 <footer class="bg-[#333b2e] text-[#F7F3EB] px-8 py-4 font-sans">
     <div class="container mx-auto">
         <p class="text-center">&copy; 2023 Taawon. Tous droits réservés.</p>
