@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Taawon</title>
+
+    <!-- load Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom font configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              googlesans: ['"Google Sans"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-[#F7F3EB] min-h-screen">
+    <!-- La Barre de Navigation-->
+    <nav
+      class="relative w-full bg-[#F7F3EB] px-8 py-4 flex justify-between items-center border-b border-gray-300"
+    >
+      <!-- Logo Container -->
+      <div class="flex items-center space-x-3">
+        <img
+          src="assets/icons/Vector.png"
+          alt="Taawon Logo"
+          class="w-8 h-8 object-contain"
+        />
+        <span class="text-xl font-bold text-gray-800 font-googlesans"
+          >Taawon</span
+        >
+        <div class="h-6 w-px bg-gray-300"></div>
+        <div
+          class="text-[10px] font-semibold tracking-wider text-gray-600 leading-tight"
+        >
+          LES SAVOIR-FAIRE<br />
+          NOUS RELIENT
+        </div>
+      </div>
+
+      <div
+        class="hidden md:flex items-center text-gray-600 font-medium space-x-6"
+      >
+        <a href="index.html" class="hover:text-black transition">Accueil</a>
+        <div class="h-5 w-px bg-gray-300"></div>
+        <a href="cooperative.html" class="hover:text-black transition"
+          >cooperative</a
+        >
+        <div class="h-5 w-px bg-gray-300"></div>
+        <a href="cooperatives.html" class="hover:text-black transition"
+          >Coopératives</a
+        >
+        <div class="h-5 w-px bg-gray-300"></div>
+        <a href="a-propos.html" class="hover:text-black transition">À propos</a>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+      <label
+        for="menu-toggle"
+        class="md:hidden flex items-center cursor-pointer text-gray-800"
+      >
+        <img
+          src="assets\icons\burger-menu-right-svgrepo-com.svg"
+          alt="Menu"
+          class="w-6 h-6 object-contain"
+        />
+      </label>
+
+      <!--MOBILE DROPDOWN MENU-->
+      <div
+        class="hidden peer-checked:flex flex-col absolute top-full left-0 w-full bg-[#F7F3EB] border-b border-gray-300 px-8 py-6 space-y-4 md:hidden shadow-md"
+      >
+        <a
+          href="index.html"
+          class="text-gray-600 hover:text-black font-medium transition"
+          >Accueil</a
+        >
+        <a
+          href="cooperative.html"
+          class="text-gray-600 hover:text-black font-medium transition"
+          >Coopérative</a
+        >
+        <a
+          href="cooperatives.html"
+          class="text-gray-600 hover:text-black font-medium transition"
+          >Coopératives</a
+        >
+        <a
+          href="a-propos.html"
+          class="text-gray-600 hover:text-black font-medium transition"
+          >À propos</a
+        >
+      </div>
+    </nav>
+
+    <div>
+      <p class="text-[#A34830] pl-4 py-4 font-bold">Revenir au sommaire ↑</p>
+
+      <h1 class="text-[#292D25] pl-4 pb-4 text-4xl font-serif">
+        À la rencontre des collectifs.
+      </h1>
+
+      <p class="px-4 pb-4 ">
+        Neuf coopératives, six savoir-faire et autant de façons de créer
+        ensemble. Découvrez leur histoire et prenez contact directement avec
+        leurs ateliers.
+      </p>
+
+      <p class="text-xs flex flex-wrap px-4 text-[#66695E]">Sélection de démonstration · fiches et coordonnées à valider.</p>
+      <img src="assets/images/10.jpg" alt="coopératives image" class="flex items-center justify-center mx-5 my-4 h-48 w-80 object-cover">
+    
+    </div>
+
+    <div>
+        
+        <div class=" bg-[#E9DFCF] pl-6 py-6 justify-around">
+        <h2 class="uppercase pb-7 text-[#A34830] font-bold text-xs">Aller directement à une région</h2>
+          <ol class="flex flex-col gap-5 list-decimal text-[#A34830] pl-4 font-bold text-sm">
+              
+              <li class="pb-4">Marrakech-Safi · 3 coopératives ↓</li>
+              <li class="pb-4">Souss-Massa · 3 coopératives ↓</li>
+              <li class="pb-4">Fès-Meknès · 3 coopératives ↓</li>
+        </ol>
+        <p class="text-xs flex flex-wrap px-4 text-[#66695E] py-4">Sommaire par ancres pour la future intégration ; navigation non interactive dans la maquette.</p>
+    </div>
+
+
+    </div>
+
+    <section>
+        <div class="flex gap-10 pt-6">
+        <p class="text-3xl font-serif pl-4">Marrakech-Safi</p>
+            <p class="pt-2">3 collectifs</p>
+
+        </div>
+        <p class="text-[#A34830] pl-4 py-4 pb-7 font-bold">Revenir au sommaire ↑</p>
+
+    <article>
+        <img src="assets/images/11.jpg" alt="zarbiya" class="h-[230px] w-full object-cover object-[40%_70%]">
+
+        <p>Tissage</p>
+
+        <h2>Tazrout</h2>
+
+        <p>Aït Ourir · Marrakech-Safi</p>
+
+        <p>Des tapis de laine tissés à la main, porteurs des récits du Haut Atlas.</p>
+
+        <p class="text-[#A34830] pl-4 py-4 font-bold ">Rencontrer la coopérative ↗</p>
+
+
+    </article>
+
+    <article>
+        <img src="assets/images/12.jpg" alt="fkhar" class="h-[230px] w-full object-cover object-top">
+
+        <p>Poterie</p>
+
+        <h2>Terres de Safi</h2>
+
+        <p>Safi · Marrakech-Safi</p>
+
+        <p>Une terre locale façonnée en pièces utiles, sobres et vivantes.</p>
+
+        <p class="text-[#A34830] pl-4 py-4 font-bold">Rencontrer la coopérative ↗</p>
+
+    </article>
+
+    <article>
+        <img src="assets/images/13.jpg" alt="Doum" class="h-[230px] w-full object-cover object-center">
+
+        <p>Vannerie</p>
+
+        <h2>Doum de l’Atlas</h2>
+
+        <p>Marrakech · Marrakech-Safi</p>
+
+        <p>La fibre de palmier devient paniers et objets du quotidien..</p>
+
+        <p class="text-[#A34830] pl-4 py-4 font-bold">Rencontrer la coopérative ↗</p>
+
+
+    </article>
+
+    </section>
+
+     <section>
+        <div>Souss-Massa</div>
+        <p>3 collectifs</p>
+        <p class="text-[#A34830] pl-4 py-4 font-bold">Revenir au sommaire ↑</p>
+
+    <article>
+        <img src="assets/images/9.png" alt="argan" class="h-[230px] w-full object-cover object-center">
+
+        <p>Argan</p>
+
+        <h2>Tidnit - Soudd-Massa</h2>
+
+        <p>Aït Ourir · Marrakech-Safi</p>
+
+        <p>Une huile d’argan issue d’un savoir-faire collectif transmis entre femmes.</p>
+
+        <p class="text-[#A34830] pl-4 py-4 font-bold">Rencontrer la coopérative ↗</p>
+
+
+    </article>
+
+    <article>
+        <img src="assets/images/1.jpg" alt="tissue" class="h-[230px] w-full object-cover object-center">
+
+        <p>Tissage</p>
+
+        <h2>Les Tisseuses d’Agadir</h2>
+
+        <p>Agadir - Souss-Massa</p>
+
+        <p>Des étoffes de coton et de laine aux nuances de la cote atlantique.</p>
+
+        <p class="text-[#A34830] pl-4 py-4 font-bold">Rencontrer la coopérative ↗↑</p>
+
+    </article>
+
+    <article>
+        <img src="assets/images/14.jpg" alt="Doum" class="h-[230px] w-full object-cover object-top">
+
+        <p>Vannerie</p>
+
+        <h2>Tigmi Doum</h2>
+
+        <p>Taroudant  - Souss-Massa</p>
+
+        <p>Des étoffes de coton et de laine aux nuances de la cote atlantique.</p>
+
+        <p class="text-[#A34830] pl-4 py-4 font-bold">Rencontrer la coopérative ↗</p>
+
+
+    </article>
+
+    </section>
+
+    <section>
+        <div>Fès-Meknès</div>
+        <p>3 collectifs</p>
+        <p class="text-[#A34830] pl-4 py-4 font-bold">Rencontrer la coopérative ↗</p>
+
+    <article>
+        <img src="assets/images/15.jpg" alt="Zellig" class="h-[230px] w-full object-cover object-center">
+
+        <p>Zellige</p>
+
+        <h2>Zellige Al Amal</h2>
+
+        <p>fès - Fès-Meknès</p>
+
+        <p>La géométrie prend forme, tesselle après tesselle, dans l’atelier.</p>
+
+        <p class="text-[#A34830] pl-4 py-4 font-bold">Rencontrer la coopérative ↗</p>
+
+
+    </article>
+
+    <article>
+        <img src="assets/images/17.png" alt="Cuir" class="h-[230px] w-full object-cover object-center">
+
+        <p>Cuir</p>
+
+        <h2>Cuir El Medla</h2>
+
+        <p>Meknès - Fès-Meknès</p>
+
+        <p>Des accessoires de cuir découpés et cousus à la main, faits pour durer.</p>
+
+        <p class="text-[#A34830] pl-4 py-4 font-bold">Rencontrer la coopérative ↗</p>
+
+
+    </article>
+
+    <article>
+        <img src="assets/images/18.jpg" alt="tissue" class="h-[230px] w-full object-cover object-center">
+
+        <p>Tissage</p>
+
+        <h2>Sefrou - Fès-Meknès</h2>
+
+        <p>Agadir - Souss-Massa</p>
+
+        <p>Des couvertures de laine qui relient matière locale et création actuelle.</p>
+
+        <p class="text-[#A34830] pl-4 py-4 font-bold">Rencontrer la coopérative ↗</p>
+
+    </article>
+
+
+    </section>
+
+    <div>
+       <p>Votre atelier a aussi une histoire.</p>
+    </div>
+
+    <p class="text-[#A34830] pl-4 py-4 font-bold">Rejoindre le réseau Taawon ↗</p>
+
+
+
+
+        
+<footer class=" bg-[#46583E] text-white  ">
+    <h1 class="font-4xl">taawon</h1>
+    <p>Des gestes singuliers. Une force collective.
+Association pour la visibilité de l’artisanat marocain.</p>
+
+<p>bonjour@taawon.example</p>
+
+<nav class="flex flex-col pb-10">
+    <a href="index.html" class="hover:text-black transition">Accueil</a>
+    <a href="index.html" class="hover:text-black transition">Les coopératives</a>
+    <a href="index.html" class="hover:text-black transition">coopérative</a>
+    <a href="index.html" class="hover:text-black transition">Devenir partenaire</a>
+</nav>
+
+<nav class="flex flex-col pb-10">
+    <a href="www.instagram.com" class="hover:text-black transition">Instagram ↗</a>
+    <a href="www.facebook.com" class="hover:text-black transition">Facebook ↗</a>
+   </nav>
+
+   <p class="pb-10 ">© 2026 Taawon · Coopérer, transmettre, faire connaître.
+Vitrine associative — aucun achat en ligne. Contenus de démonstration à valider.</p>
+
+</footer>
+
+
+
+  </body>
+</html>
