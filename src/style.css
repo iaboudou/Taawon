@@ -20,6 +20,18 @@
     }
 }
 
-.ttl  { @apply text-3xl px-5; }
-.desc { @apply px-5; }
-.pics { @apply flex flex-col gap-3; }
+.ttl {
+    @apply text-3xl px-5;
+}
+
+.desc {
+    @apply px-5;
+}
+
+.pics {
+    @apply flex flex-col gap-5 h-[600px];
+}
+
+.pic {
+    @apply rounded-xl;
+}

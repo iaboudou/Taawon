@@ -48,8 +48,9 @@
         </div>
     </nav>
 
-    <!-- main -->
     <main class="flex flex-col gap-5">
+
+        <!-- hero -->
         <section class="ms:flex ms:justify-center ms:items-center">
             <div class="index-marginlr ms:pl-25">
                 <h1
@@ -78,13 +79,12 @@
                 </div>
             </div>
 
-            <div>
-                <img src="/assets/images/1.jpg" class="p-[var(--padding)] rounded-lg dm:max-w-6 dm:max-h-6 md:pr-17"
-                    alt="">
+            <div class="flex flex-row justify-center items-center p-[var(--padding)]">
+                <img src="/assets/images/1.jpg" class="rounded-xl w-full max-w-[700px]" alt="">
             </div>
         </section>
 
-
+        <!-- statistique  -->
         <div class="grid grid-cols-2 gap-y-8 p-[var(--padding)] bg-[#E9DFCF] md:px-50">
 
             <div class="flex flex-col gap-6 [var(--padding)]  pl-pl-[var(--padding)]">
@@ -113,6 +113,7 @@
 
         </div>
 
+        <!-- explorer -->
         <div class="flex flex-col gap-5 p-[var(--padding)] mt-8">
             <div class="text-[var(--primarycolor)] font-bold"> Six façons de faire, mille façons de raconter </div>
             <div class="font-serif text-[36px]"> La matière nous rassemble. </div>
@@ -120,11 +121,11 @@
                 territoires, ouverts sur le présent. </div>
         </div>
 
-        <div class="p-[var(--padding)] grid grid-cols-12 gap-2">
+        <div class="p-[var(--padding)] grid grid-cols-12 gap-7 ">
 
             <div class="pics col-span-12 md:col-span-6">
-                <div class="w-full h-[80%] bg-red-500">
-                    <img class="w-full h-full object-cover" src="/assets/images/2.jpg" alt="">
+                <div class="w-full h-[80%]">
+                    <img class="pic w-full h-full object-cover" src="/assets/images/2.jpg" alt="">
                 </div>
                 <div class="flex justify-between w-full pr-5">
                     <div class="ttl h-2">Tissage</div>
@@ -135,8 +136,8 @@
             </div>
 
             <div class="pics md:col-span-3 col-span-6 ">
-                <div class="w-full h-[80%] bg-red-500">
-                    <img class="w-full h-full object-cover" src="/assets/images/3.jpg" alt="">
+                <div class="w-full h-[80%]">
+                    <img class="pic w-full h-full object-cover" src="/assets/images/3.jpg" alt="">
                 </div>
                 <div class="flex justify-between w-full pr-5">
                     <div class="ttl h-2">Poterie</div>
@@ -147,8 +148,8 @@
             </div>
 
             <div class="pics md:col-span-3 col-span-6">
-                <div class="w-full h-[80%] bg-red-500">
-                    <img class="w-full h-full object-cover" src="/assets/images/4.jpg" alt="">
+                <div class="w-full h-[80%]">
+                    <img class="pic w-full h-full object-cover" src="/assets/images/4.jpg" alt="">
                 </div>
                 <div class="flex justify-between w-full pr-5">
                     <div class="ttl h-2">Argan</div>
@@ -159,8 +160,8 @@
             </div>
 
             <div class="pics md:col-span-5 col-span-12">
-                <div class="w-full h-[80%] bg-red-500">
-                    <img class="w-full h-full object-cover" src="/assets/images/5.jpg" alt="">
+                <div class="w-full h-[80%]">
+                    <img class="pic w-full h-full object-cover" src="/assets/images/5.jpg" alt="">
                 </div>
                 <div class="flex justify-between w-full pr-5">
                     <div class="ttl h-2">Zellige</div>
@@ -171,8 +172,8 @@
             </div>
 
             <div class="pics md:col-span-3 col-span-6">
-                <div class="w-full h-[80%] bg-red-500">
-                    <img class="w-full h-full object-cover" src="/assets/images/6.jpg" alt="">
+                <div class="w-full h-[80%]">
+                    <img class="pic w-full h-full object-cover" src="/assets/images/6.jpg" alt="">
                 </div>
                 <div class="flex justify-between w-full pr-5">
                     <div class="ttl h-2">Cuir</div>
@@ -183,8 +184,8 @@
             </div>
 
             <div class="pics md:col-span-4 col-span-6">
-                <div class="w-full h-[80%] bg-red-500">
-                    <img class="w-full h-full object-cover" src="/assets/images/7.jpg" alt="">
+                <div class="w-full h-[80%]">
+                    <img class="pic w-full h-full object-cover" src="/assets/images/7.jpg" alt="">
                 </div>
                 <div class="flex justify-between w-full pr-5">
                     <div class="ttl h-2">Vannerie</div>
@@ -196,74 +197,78 @@
         </div>
 
 
+        <!-- à la une  -->
         <div class="flex flex-col gap-5 p-[var(--padding)] mt-8">
             <div class="text-[var(--primarycolor)] font-bold"> À la une</div>
             <div class="font-serif text-[36px]"> Derrière chaque pièce, un collectif. </div>
         </div>
 
-<section class="grid grid-cols-1 md:grid-cols-3 gap-6 p-[var(--padding)]">
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 p-[var(--padding)]">
 
-    <div class="pics flex flex-col">
-        <div class="w-full h-[350px] overflow-hidden rounded-xl bg-gray-200">
-            <img class="block w-full h-full object-cover" src="assets/images/8.jpg" alt="Tapis tissé de la coopérative Tazrout">
-        </div>
-        <div class="desc mt-3 w-fit rounded-lg bg-gray-300 p-1 text-sm text-gray-800">Tissage</div>
-        <div class="mt-3 flex items-center justify-between">
-            <div class="ttl">Tazrout</div>
-            <a href="https://www.google.com" class="text-2xl">
-                <span class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span>
-            </a>
-        </div>
-        <h6 class="desc mt-1">Aït Ourir · Marrakech-Safi</h6>
-        <div class="desc mt-3 min-h-[60px]">
-            Des tapis de laine tissés à la main, porteurs des récits du Haut Atlas.
-        </div>
-        <a href="partenaire.html" class="desc mt-auto pt-5 font-bold text-[var(--primarycolor)]">
-            Rencontrer la coopérative <span>&#8599;&#xFE0E;</span>
-        </a>
-    </div>
+            <div class="pics flex flex-col">
+                <div class="w-full h-[350px] overflow-hidden rounded-xl bg-gray-200">
+                    <img class="block w-full h-full object-cover" src="assets/images/8.jpg"
+                        alt="Tapis tissé de la coopérative Tazrout">
+                </div>
+                <div class="desc mt-3 w-fit rounded-lg bg-gray-300 p-1 text-sm text-gray-800">Tissage</div>
+                <div class="mt-3 flex items-center justify-between">
+                    <div class="ttl">Tazrout</div>
+                    <a href="https://www.google.com" class="text-2xl">
+                        <span class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span>
+                    </a>
+                </div>
+                <h6 class="desc mt-1">Aït Ourir · Marrakech-Safi</h6>
+                <div class="desc mt-3 min-h-[60px]">
+                    Des tapis de laine tissés à la main, porteurs des récits du Haut Atlas.
+                </div>
+                <a href="partenaire.html" class="desc mt-auto pt-5 font-bold text-[var(--primarycolor)]">
+                    Rencontrer la coopérative <span>&#8599;&#xFE0E;</span>
+                </a>
+            </div>
 
-    <div class="pics flex flex-col">
-        <div class="w-full h-[350px] overflow-hidden rounded-xl bg-gray-200">
-            <img class="block w-full h-full object-cover" src="assets/images/9.png" alt="Poterie de la coopérative Terres de Safi">
-        </div>
-        <div class="desc mt-3 w-fit rounded-lg bg-gray-300 p-1 text-sm text-gray-800">Poterie</div>
-        <div class="mt-3 flex items-center justify-between">
-            <div class="ttl">Terres de Safi</div>
-            <a href="https://www.google.com" class="text-2xl">
-                <span class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span>
-            </a>
-        </div>
-        <h6 class="desc mt-1">Safi · Marrakech-Safi</h6>
-        <div class="desc mt-3 min-h-[60px]">
-            Une terre locale façonnée en pièces utiles, sobres et vivantes.
-        </div>
-        <a href="partenaire.html" class="desc mt-auto pt-5 font-bold text-[var(--primarycolor)]">
-            Rencontrer la coopérative <span>&#8599;&#xFE0E;</span>
-        </a>
-    </div>
+            <div class="pics flex flex-col">
+                <div class="w-full h-[350px] overflow-hidden rounded-xl bg-gray-200">
+                    <img class="block w-full h-full object-cover" src="assets/images/9.png"
+                        alt="Poterie de la coopérative Terres de Safi">
+                </div>
+                <div class="desc mt-3 w-fit rounded-lg bg-gray-300 p-1 text-sm text-gray-800">Poterie</div>
+                <div class="mt-3 flex items-center justify-between">
+                    <div class="ttl">Terres de Safi</div>
+                    <a href="https://www.google.com" class="text-2xl">
+                        <span class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span>
+                    </a>
+                </div>
+                <h6 class="desc mt-1">Safi · Marrakech-Safi</h6>
+                <div class="desc mt-3 min-h-[60px]">
+                    Une terre locale façonnée en pièces utiles, sobres et vivantes.
+                </div>
+                <a href="partenaire.html" class="desc mt-auto pt-5 font-bold text-[var(--primarycolor)]">
+                    Rencontrer la coopérative <span>&#8599;&#xFE0E;</span>
+                </a>
+            </div>
 
-    <div class="pics flex flex-col">
-        <div class="w-full h-[350px] overflow-hidden rounded-xl bg-gray-200">
-            <img class="block w-full h-full object-cover" src="assets/images/10.jpg" alt="Huile d'argan de la coopérative Argan Tifaout">
-        </div>
-        <div class="desc mt-3 w-fit rounded-lg bg-gray-300 p-1 text-sm text-gray-800">Argan</div>
-        <div class="mt-3 flex items-center justify-between">
-            <div class="ttl">Argan Tifaout</div>
-            <a href="https://www.google.com" class="text-2xl">
-                <span class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span>
-            </a>
-        </div>
-        <h6 class="desc mt-1">Tiznit · Souss-Massa</h6>
-        <div class="desc mt-3 min-h-[60px]">
-            Une huile d’argan issue d’un savoir-faire collectif transmis entre femmes.
-        </div>
-        <a href="partenaire.html" class="desc mt-auto pt-5 font-bold text-[var(--primarycolor)]">
-            Rencontrer la coopérative <span>&#8599;&#xFE0E;</span>
-        </a>
-    </div>
+            <div class="pics flex flex-col">
+                <div class="w-full h-[350px] overflow-hidden rounded-xl bg-gray-200">
+                    <img class="block w-full h-full object-cover" src="assets/images/10.jpg"
+                        alt="Huile d'argan de la coopérative Argan Tifaout">
+                </div>
+                <div class="desc mt-3 w-fit rounded-lg bg-gray-300 p-1 text-sm text-gray-800">Argan</div>
+                <div class="mt-3 flex items-center justify-between">
+                    <div class="ttl">Argan Tifaout</div>
+                    <a href="https://www.google.com" class="text-2xl">
+                        <span class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span>
+                    </a>
+                </div>
+                <h6 class="desc mt-1">Tiznit · Souss-Massa</h6>
+                <div class="desc mt-3 min-h-[60px]">
+                    Une huile d’argan issue d’un savoir-faire collectif transmis entre femmes.
+                </div>
+                <a href="partenaire.html" class="desc mt-auto pt-5 font-bold text-[var(--primarycolor)]">
+                    Rencontrer la coopérative <span>&#8599;&#xFE0E;</span>
+                </a>
+            </div>
 
-</section>
+        </section>
     </main>
     </a>
 
