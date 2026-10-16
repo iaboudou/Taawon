@@ -1,13 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taawon</title>
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-[#F7F3EB] min-h-screen">
+
+    <!-- Nav bar -->
+    <nav class="relative w-full bg-[#F7F3EB] px-8 py-4 flex justify-between items-center border-b border-gray-300">
+
+        <div class="flex items-center space-x-3">
+            <img src="assets/icons/Vector.png" alt="Taawon Logo" class="w-8 h-8 object-contain">
+            <span class="text-xl font-bold text-gray-800 ">Taawon</span>
+            <div class="h-6 w-px bg-gray-300"></div>
+            <div class="text-[10px] font-bold tracking-wider text-gray-600 leading-tight">
+                LES SAVOIR-FAIRE<br>
+                NOUS RELIENT
+            </div>
+        </div>
+
+        <div class="hidden md:flex items-center text-gray-600 font-medium space-x-6">
+            <a href="index.html" class="hover:text-black transition opacity-50">Accueil</a>
+            <div class="h-5 w-px bg-gray-300"></div>
+            <a href="cooperative.html" class="hover:text-black transition">cooperative</a>
+            <div class="h-5 w-px bg-gray-300"></div>
+            <a href="cooperatives.html" class="hover:text-black transition">Coopératives</a>
+            <div class="h-5 w-px bg-gray-300"></div>
+            <a href="a-propos.html" class="hover:text-black transition">À propos</a>
+        </div>
+
+        <label for="menu-toggle" class="md:hidden flex items-center cursor-pointer text-gray-800">
+            <img src="assets/icons/burger-menu-right-svgrepo-com.svg" alt="Menu" class="w-6 h-6 object-contain">
+        </label>
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+
+        <div
+            class="hidden peer-checked:flex flex-col absolute top-full left-0 w-full bg-[#F7F3EB] border-b border-gray-300 px-8 py-6 space-y-4 md:hidden shadow-md">
+            <a href="index.html" class="text-gray-600 hover:text-black font-medium transition">Accueil</a>
+            <a href="cooperative.html" class="text-gray-600 hover:text-black font-medium transition">Coopérative</a>
+            <a href="cooperatives.html" class="text-gray-600 hover:text-black font-medium transition">Coopératives</a>
+            <a href="a-propos.html" class="text-gray-600 hover:text-black font-medium transition">À propos</a>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main class="flex flex-col gap-5">
+        <section class="ms:flex ms:justify-center ms:items-center">
+            <div class="index-marginlr ms:pl-25">
+                <h1
+                    class="flex justify-center text-[#292D25] font-bold  text-3xl p-10 ms:pl-0 ms:justify-start ms:text-7xl">
+                    Des mains, des liens, des
+                    possibles. </h1>
+                <h2
+                    class="text-[var(--primarycolor)] p-[var(--padding)] ms:pl-0 text-center flex justify-center font-bold ms:justify-start">
+                    COOPÉRER ·
+                    TRANSMETTRE · FAIRE
+                    CONNAÎTRE </h2>
+                <h3 class="text-[#292D25] text-center ms:text-left p-[var(--padding)] ms:pl-0 ms:justify-start"> À la
+                    rencontre des coopératives artisanales
+                    marocaines. Taawon
+                    rend visibles celles et ceux qui façonnent les matières et font vivre les savoir-faire. </h3>
+                <div class=" flex gap-5 flex-col justify-center items-center ms:justify-start ms:flex-row">
+                    <a href="/cooperatives.html"
+                        class="bg-[var(--primarycolor)] h-12 w-72 text-white rounded-lg flex justify-center items-center">
+                        Découvrir les coopératives <span class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span>
+                    </a>
+                    <a href="/partenaire.html"
+                        class="border border-red-500 h-12 w-72 rounded-lg flex justify-center items-center ">
+                        Devenir partenaire <span class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div>
+                <img src="/assets/images/1.jpg" class="p-[var(--padding)] rounded-lg dm:max-w-6 dm:max-h-6 md:pr-17"
+                    alt="">
+            </div>
+        </section>
+
+
+        <div class="grid grid-cols-2 gap-y-8 p-[var(--padding)] bg-[#E9DFCF] md:px-50">
+
+            <div class="flex flex-col gap-6 [var(--padding)]  pl-pl-[var(--padding)]">
+                <h1 class="font-[Cormorant_Garamond] text-7xl md:text-8xl text-[#292D25]">36</h1>
+                <h4 class="text-sm text-[#292D25]">coopératives</h4>
+            </div>
+
+            <div class="flex flex-col gap-6 [var(--padding)]  pl-pl-[var(--padding)]">
+                <h1 class="font-[Cormorant_Garamond] text-7xl md:text-8xl text-[#292D25]">640</h1>
+                <h4 class="text-sm text-[#292D25]">artisans & artisanes</h4>
+            </div>
+
+            <div class="flex flex-col gap-6 [var(--padding)] pl-[var(--padding)]">
+                <h1 class="font-[Cormorant_Garamond] text-7xl md:text-8xl text-[#292D25]">8</h1>
+                <h4 class="text-sm text-[#292D25]">régions représentées</h4>
+            </div>
+
+            <div class="flex flex-col gap-6 [var(--padding)] pl-[var(--padding)]">
+                <h1 class="font-[Cormorant_Garamond] text-7xl md:text-8xl text-[#292D25]">180</h1>
+                <h4 class="text-sm text-[#292D25]">produits présentés</h4>
+            </div>
+
+            <h4 class="col-span-2 pt-4 text-xs text-[#292D25]/70">
+                Repères illustratifs du réseau · données de démonstration, non vérifiées.
+            </h4>
+
+        </div>
+
+        <div class="flex flex-col gap-5 p-[var(--padding)] mt-8">
+            <div class="text-[var(--primarycolor)] font-bold"> Six façons de faire, mille façons de raconter </div>
+            <div class="font-serif text-[36px]"> La matière nous rassemble. </div>
+            <div class="font-['Inter']"> Du fil à la terre, du végétal au cuir : explorez des gestes ancrés dans les
+                territoires, ouverts sur le présent. </div>
+        </div>
+
+        <div class="p-[var(--padding)] grid grid-cols-12 gap-2">
+
+            <div class="pics col-span-12 md:col-span-6">
+                <div class="w-full h-[80%] bg-red-500">
+                    <img class="w-full h-full object-cover" src="/assets/images/2.jpg" alt="">
+                </div>
+                <div class="flex justify-between w-full pr-5">
+                    <div class="ttl h-2">Tissage</div>
+                    <a href="https://www.google.com" class="text-2xl"><span
+                            class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span></a>
+                </div>
+                <div class="desc h-2">La laine, le fil et les récits.</div>
+            </div>
+
+            <div class="pics md:col-span-3 col-span-6 ">
+                <div class="w-full h-[80%] bg-red-500">
+                    <img class="w-full h-full object-cover" src="/assets/images/3.jpg" alt="">
+                </div>
+                <div class="flex justify-between w-full pr-5">
+                    <div class="ttl h-2">Poterie</div>
+                    <a href="https://www.google.com" class="text-2xl"><span
+                            class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span></a>
+                </div>
+                <div class="desc h-2">La terre prend vie.</div>
+            </div>
+
+            <div class="pics md:col-span-3 col-span-6">
+                <div class="w-full h-[80%] bg-red-500">
+                    <img class="w-full h-full object-cover" src="/assets/images/4.jpg" alt="">
+                </div>
+                <div class="flex justify-between w-full pr-5">
+                    <div class="ttl h-2">Argan</div>
+                    <a href="https://www.google.com" class="text-2xl"><span
+                            class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span></a>
+                </div>
+                <div class="desc h-2">Un héritage précieux.</div>
+            </div>
+
+            <div class="pics md:col-span-5 col-span-12">
+                <div class="w-full h-[80%] bg-red-500">
+                    <img class="w-full h-full object-cover" src="/assets/images/5.jpg" alt="">
+                </div>
+                <div class="flex justify-between w-full pr-5">
+                    <div class="ttl h-2">Zellige</div>
+                    <a href="https://www.google.com" class="text-2xl"><span
+                            class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span></a>
+                </div>
+                <div class="desc h-2">Composer, pièce à pièce.</div>
+            </div>
+
+            <div class="pics md:col-span-3 col-span-6">
+                <div class="w-full h-[80%] bg-red-500">
+                    <img class="w-full h-full object-cover" src="/assets/images/6.jpg" alt="">
+                </div>
+                <div class="flex justify-between w-full pr-5">
+                    <div class="ttl h-2">Cuir</div>
+                    <a href="https://www.google.com" class="text-2xl"><span
+                            class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span></a>
+                </div>
+                <div class="desc h-2">Le temps dans la matière.</div>
+            </div>
+
+            <div class="pics md:col-span-4 col-span-6">
+                <div class="w-full h-[80%] bg-red-500">
+                    <img class="w-full h-full object-cover" src="/assets/images/7.jpg" alt="">
+                </div>
+                <div class="flex justify-between w-full pr-5">
+                    <div class="ttl h-2">Vannerie</div>
+                    <a href="https://www.google.com" class="text-2xl"><span
+                            class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span></a>
+                </div>
+                <div class="desc h-2">Le végétal, entre les mains.</div>
+            </div>
+        </div>
+
+
+        <div class="flex flex-col gap-5 p-[var(--padding)] mt-8">
+            <div class="text-[var(--primarycolor)] font-bold"> À la une</div>
+            <div class="font-serif text-[36px]"> Derrière chaque pièce, un collectif. </div>
+        </div>
+
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 p-[var(--padding)]">
+
+    <div class="pics flex flex-col">
+        <div class="w-full h-[350px] overflow-hidden rounded-xl bg-gray-200">
+            <img class="block w-full h-full object-cover" src="assets/images/8.jpg" alt="Tapis tissé de la coopérative Tazrout">
+        </div>
+        <div class="desc mt-3 w-fit rounded-lg bg-gray-300 p-1 text-sm text-gray-800">Tissage</div>
+        <div class="mt-3 flex items-center justify-between">
+            <div class="ttl">Tazrout</div>
+            <a href="https://www.google.com" class="text-2xl">
+                <span class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span>
+            </a>
+        </div>
+        <h6 class="desc mt-1">Aït Ourir · Marrakech-Safi</h6>
+        <div class="desc mt-3 min-h-[60px]">
+            Des tapis de laine tissés à la main, porteurs des récits du Haut Atlas.
+        </div>
+        <a href="partenaire.html" class="desc mt-auto pt-5 font-bold text-[var(--primarycolor)]">
+            Rencontrer la coopérative <span>&#8599;&#xFE0E;</span>
+        </a>
+    </div>
+
+    <div class="pics flex flex-col">
+        <div class="w-full h-[350px] overflow-hidden rounded-xl bg-gray-200">
+            <img class="block w-full h-full object-cover" src="assets/images/9.png" alt="Poterie de la coopérative Terres de Safi">
+        </div>
+        <div class="desc mt-3 w-fit rounded-lg bg-gray-300 p-1 text-sm text-gray-800">Poterie</div>
+        <div class="mt-3 flex items-center justify-between">
+            <div class="ttl">Terres de Safi</div>
+            <a href="https://www.google.com" class="text-2xl">
+                <span class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span>
+            </a>
+        </div>
+        <h6 class="desc mt-1">Safi · Marrakech-Safi</h6>
+        <div class="desc mt-3 min-h-[60px]">
+            Une terre locale façonnée en pièces utiles, sobres et vivantes.
+        </div>
+        <a href="partenaire.html" class="desc mt-auto pt-5 font-bold text-[var(--primarycolor)]">
+            Rencontrer la coopérative <span>&#8599;&#xFE0E;</span>
+        </a>
+    </div>
+
+    <div class="pics flex flex-col">
+        <div class="w-full h-[350px] overflow-hidden rounded-xl bg-gray-200">
+            <img class="block w-full h-full object-cover" src="assets/images/10.jpg" alt="Huile d'argan de la coopérative Argan Tifaout">
+        </div>
+        <div class="desc mt-3 w-fit rounded-lg bg-gray-300 p-1 text-sm text-gray-800">Argan</div>
+        <div class="mt-3 flex items-center justify-between">
+            <div class="ttl">Argan Tifaout</div>
+            <a href="https://www.google.com" class="text-2xl">
+                <span class="text-[var(--primarycolor)]">&#8599;&#xFE0E;</span>
+            </a>
+        </div>
+        <h6 class="desc mt-1">Tiznit · Souss-Massa</h6>
+        <div class="desc mt-3 min-h-[60px]">
+            Une huile d’argan issue d’un savoir-faire collectif transmis entre femmes.
+        </div>
+        <a href="partenaire.html" class="desc mt-auto pt-5 font-bold text-[var(--primarycolor)]">
+            Rencontrer la coopérative <span>&#8599;&#xFE0E;</span>
+        </a>
+    </div>
+
+</section>
+    </main>
+    </a>
 
 </body>
 

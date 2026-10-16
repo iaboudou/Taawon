@@ -1,1 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,wght@0,300..700;1,300..700&family=Reenie+Beanie&display=swap');
 @import "tailwindcss";
+
+
+
+:root {
+    --padding: 1.5rem;
+    --primarycolor: #A34830;
+}
+
+
+@media (min-width: 2000px) {
+
+    .index-marginlr {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        justify-content: start;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.ttl  { @apply text-3xl px-5; }
+.desc { @apply px-5; }
+.pics { @apply flex flex-col gap-3; }
